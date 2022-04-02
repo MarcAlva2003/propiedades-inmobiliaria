@@ -198,7 +198,7 @@ export default {
     text-align: center;
 }
 .dpto__info--titulo{
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 15px;
 }
 .dpto__info--precio{
