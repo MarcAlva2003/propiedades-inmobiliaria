@@ -1,6 +1,5 @@
 <template>
     <div>
-
         <div class="dptos-container">
             <div class="dpto" v-for="dpto of infoDptos" v-bind:key="dpto.id" @click="inmuebleRedirect(dpto.id)">
                 <div class="dpto__img">
@@ -57,7 +56,8 @@ export default {
 .dptos-container{
     /* background-color: red; */
     width: 100%;
-    margin: 30px auto 0;
+    min-height: calc(100vh - 110px);
+    margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -67,7 +67,7 @@ export default {
         width: 94%;
     }
 }
-@media (min-width: 768px){
+@media (min-width: 992px){
     .dptos-container{
         width: 90%;
     }
@@ -78,8 +78,7 @@ export default {
     height: 340px;
     border: 1px solid #bbb;
     border-radius: 10px;
-    
-    margin: 10px;
+    margin: 10px 10px 30px 10px;
     background-color: #fff;
 }
 .dpto:hover{

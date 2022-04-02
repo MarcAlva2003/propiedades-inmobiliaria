@@ -23,4 +23,7 @@ export default {
     justify-content: center;
     align-items: center;
 }
+.header img{
+    height: 90px;
+}
 </style>    

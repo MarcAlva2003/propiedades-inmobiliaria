@@ -59,7 +59,7 @@
                 </div>
                 <div class="overlay--images-slider">
                     <img src="../assets/void.png" alt="overlay--void-img" class="void-img">
-                    <img class="overlay--inm-img" :src="inm.imgs[nroImg]" alt="Imagen propiedad" @click="overlayIsOpen = false">
+                    <img class="overlay--inm-img" :src="inm.imgs[nroImg]" alt="Imagen propiedad">
                     <div class="boton-atras boton-imgs" @click="atras()">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down-circle" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#555" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>  <circle cx="12" cy="12" r="9" />  <line x1="8" y1="12" x2="12" y2="16" />  <line x1="12" y1="8" x2="12" y2="16" />  <line x1="16" y1="12" x2="12" y2="16" /></svg>
                     </div>
@@ -169,7 +169,7 @@ export default {
 }
 .boton-imgs{
     transform: rotate(90deg);
-    background-color: rgba(240, 240, 240, 0.445);
+    background-color: rgba(255, 255, 255, 0.61);
     height: 32px;
     width: 32px;
     border-radius: 50%;
@@ -177,17 +177,18 @@ export default {
     margin: auto;
     top: 0;
     bottom: 0; 
+    padding: 5px;
 }
 .overlay-close-button:hover,
 .boton-imgs:hover{
     cursor: pointer;
 }
 .boton-atras{
-    left: 5px;
+    left: 0;
     
 }
 .boton-adelante{
-    right: 5px;
+    right: 0;
 }
 .img-count{
     position: absolute;
@@ -265,9 +266,7 @@ export default {
     bottom: 0;
     margin: auto;
 }
-.overlay--inm-img:hover{
-    cursor: zoom-out;
-}
+
 .overlay--img-count{
     position: absolute;
     right: 0;
